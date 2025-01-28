@@ -19,8 +19,8 @@ library(ecotrends)
 In MontObEO, the maxent classifier was trained in the region of Montesinho Natural Park (MNP) but the results were projected to the Montesinho/Nogueira Protection Area. Thus, two vector files were used:
 - pnm.gpkg - with MNP limits
 - pnm_n_grid_limit.gpkg - with Montesinho/Nogueira limits (1km cell grid used on the project)
-You can download both files by clicking on the designation, place them in your working directory, and then load them:
 
+You can download both files by clicking on each of the designations above, place them in your working directory and load them:
 ```
 # specify a folder as the working directory
 setwd('C:/Users/userFolder')
@@ -33,5 +33,19 @@ plot(monteNog)
 
 ```
 
+## Species presence coordinates
 
+Here, you can download the vector file with the occurrences of the species modeled in MontObEO.
 
+After loading the file you can filter the species you want to model:
+
+(necessário link no here e corrigir código)
+
+```
+# load shapefile (.shp)
+allOccurr <- terra::vect('./????????')
+
+#filter Cervus_elaphus
+species_occ <- allOccurr[which(allOccurr$Species == 'Cervus_elaphus'),]
+
+```
