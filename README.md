@@ -36,11 +36,10 @@ plot(monteNog)
 
 ### Species presence coordinates
 
-Here, you can download the vector file with the occurrences of the species modeled in MontObEO.
+You will need some species presence coordinates, then you can download the vector file with the <a href="https://drive.google.com/file/d/1ohSr_InDlzXThOP3GuJrV5B14aYqv73I/view?usp=sharing">species occurrences</a> modeled in MontObEO.
 
 After loading the file you can filter the species you want to model:
 
-(necessário link no Here e corrigir código)
 
 ```
 # load shapefile (.shp)
@@ -54,12 +53,13 @@ occ_coords <- species_occ[ , c("x3763", "y3763")]
 
 plot(monteNog); points(occ_coords)
 
+
+# faltam figuras e definir espécie
 ```
-faltam figuras e definir espécie
 
 ### Predictors variables
 
-In montobeo, the annual averages of six MODIS variables were used, aggregated in a grid of 1km cells:
+In montobeo, the annual averages of six MODIS variables were used (annual mean aggregated over a grid of 1km cells):
 - EVI	- Enhanced Vegetation Index
 - SR - Surface Reflectance
 - LST day -	Day Land Surface Temperature
@@ -67,9 +67,7 @@ In montobeo, the annual averages of six MODIS variables were used, aggregated in
 - AAB	- Area Annually Burned
 - TSF	- Time Since Fire
 
-Since the periodicity is annual, a raster image is required for each year with six bands corresponding to the variables.
-
-Here you can download a zip file with the 23 GeoTiffs corresponding to the years 2001 to 2023.
+Since the periodicity is annual, a raster image is required for each year with six bands corresponding to the variables. You can download a zip file with the 23 images of <a href="https://drive.google.com/file/d/1PcnfVH89t09LbvTYY2exqGor9JQbZSu4/view?usp=sharing">predictor variables</a> used in Montobeo corresponding to the years 2001 to 2023.
 
 After loading the files, it is necessary to do some processing to adjust the band names to those required by the package (see R help for the getModels function):
 
