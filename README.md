@@ -39,7 +39,7 @@ Here, you can download the vector file with the occurrences of the species model
 
 After loading the file you can filter the species you want to model:
 
-(necessário link no here e corrigir código)
+(necessário link no Here e corrigir código)
 
 ```
 # load shapefile (.shp)
@@ -47,5 +47,70 @@ allOccurr <- terra::vect('./????????')
 
 #filter Cervus_elaphus
 species_occ <- allOccurr[which(allOccurr$Species == 'Cervus_elaphus'),]
+
+# extract subset with only coordinate columns
+occ_coords <- species_occ[ , c("x3763", "y3763")]
+
+plot(monteNog); points(occ_coords)
+
+```
+faltam figuras e definir espécie
+
+## Predictors variables
+
+In montobeo, the annual averages of six MODIS variables were used, aggregated in a grid of 1km cells. Since the periodicity is annual, a raster image is required for each year with six bands corresponding to the variables.
+
+Here you can download a zip file with the 23 GeoTiffs corresponding to the years 2001 to 2023.
+
+After loading the files, it is necessary to do some processing to adjust the band names to those required by the package (see R help for the getModels function):
+
+```
+
+código
+imagens
+
+```
+
+## Ecological niche models
+
+We can now compute yearly ecological niche models with these occurrences and variables in the MNP region, optionally saving the results to a file:
+
+```
+
+código
+Imagens?
+
+```
+
+## Model predictions
+
+Let's now calculate the model predictions for each year, extrapolating them to the Montesinho/Nogueira region, optionally exporting the results to a file:
+
+```
+
+código
+Imagens
+
+```
+
+## Model performance
+
+You can evaluate the fit of these predictions with the getPerformance function:
+
+```
+
+código
+Imagens
+
+```
+
+## Habitat suitability trends
+
+Finally, let's use the getTrend function to get the slope and significance of a linear (monotonic) temporal trend in suitability in each pixel, optionally providing the occurrence coordinates so that the results are restricted to the pixels that overlap them:
+
+```
+
+código
+Imagens
 
 ```
