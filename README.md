@@ -1,8 +1,9 @@
-## Run MontObEO models using ecotrends
+## Run Montobeo models using ecotrends
+
+In this document you can find the code blocks and files needed to run <a href="https://montobeo.wordpress.com/">MontObEO</a> models using **ecotrends**.
 
 Ecotrends is an R package for computing a time series of ecological niche models, using species occurrence data and environmental variables to map temporal trends in environmental suitability. You can see more information on the <a href="https://github.com/AMBarbosa/ecotrends">package's github page</a>.
 
-Here you will find the code blocks and files needed to model species as performed in the <a href="https://montobeo.wordpress.com/">MontObEO project</a>.
 
 ### Installation
 
