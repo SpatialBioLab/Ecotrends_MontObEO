@@ -58,7 +58,15 @@ faltam figuras e definir espécie
 
 ## Predictors variables
 
-In montobeo, the annual averages of six MODIS variables were used, aggregated in a grid of 1km cells. Since the periodicity is annual, a raster image is required for each year with six bands corresponding to the variables.
+In montobeo, the annual averages of six MODIS variables were used, aggregated in a grid of 1km cells:
+- EVI	- Enhanced Vegetation Index
+- SR - Surface Reflectance
+- LST day -	Day Land Surface Temperature
+- LST night -	Night Land Surface Temperature
+- AAB	- Area Annually Burned
+- TSF	- Time Since Fire
+
+Since the periodicity is annual, a raster image is required for each year with six bands corresponding to the variables.
 
 Here you can download a zip file with the 23 GeoTiffs corresponding to the years 2001 to 2023.
 
