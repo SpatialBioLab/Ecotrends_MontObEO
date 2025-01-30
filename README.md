@@ -21,6 +21,11 @@ In MontObEO, the maxent classifier was trained in the region of Montesinho Natur
 - <a href="https://drive.google.com/file/d/1uuUxtpfjJlTDW4gPKLpz101U6L1yh8cz/view?usp=sharing">pnm.gpkg</a> - with MNP limits
 - <a href="https://drive.google.com/file/d/1HhLo7iJdTVH259e66YIArJokbyGWQgzP/view?usp=sharing">pnm_n_grid_limit.gpkg</a> - with Montesinho/Nogueira limits (1km cell grid used on the project)
 
+
+- <a href="https://drive.google.com/uc?export=download&id=1HhLo7iJdTVH259e66YIArJokbyGWQgzP">pnm_n_grid_limit.gpkg</a> - with Montesinho/Nogueira limits (1km cell grid used on the project)
+
+
+
 You can download both files by clicking on each of the designations above, place them in your working directory and load them:
 ```
 # specify a folder as the working directory
