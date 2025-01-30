@@ -33,6 +33,8 @@ monteNog <- terra::vect('./pnm_n_grid_limit.gpkg')
 plot(montesinho)
 plot(monteNog)
 ```
+![regions](https://github.com/user-attachments/assets/8a30aa32-81d6-4711-a6e9-2042a61e3744)
+
 
 ### Species presence coordinates
 
@@ -52,6 +54,8 @@ occ_coords <- species_occ[ , c("x3763", "y3763")]
 
 plot(monteNog); points(occ_coords)
 ```
+![cervus_occurrences](https://github.com/user-attachments/assets/990bd681-b791-4f0b-816e-4023a6f4c195)
+
 
 ### Predictors variables
 
@@ -68,7 +72,6 @@ Since the periodicity is annual, a raster image is required for each year with s
 After loading the files, it is necessary to do some processing to adjust the band names to those required by the package (see R help for the getModels function):
 
 ```
-
 # list tif files in folder where are the images from predictors_vars.zip
 raster_dir <- "./pred_vars"
 tif_files <- list.files(raster_dir, pattern = "\\.tif$", full.names = TRUE)
@@ -102,6 +105,8 @@ names(vars) <- sub("LST_Night", "LSTn", names(vars))
 
 plot(vars[[1:6]])
 ```
+![pred_vars](https://github.com/user-attachments/assets/3fb6ba67-1ecb-4b87-8d6e-8e093cb9d9af)
+
 
 ### Ecological niche models
 
