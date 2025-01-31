@@ -11,8 +11,6 @@ You can (re)install ecotrends from GitHub and then load it:
 
 ```r
 # devtools::install_github("AMBarbosa/ecotrends")  # run if you don't have the latest version!
-
-library(ecotrends)
 ```
 
 ### Regions for modelling
@@ -26,6 +24,8 @@ You can download both files by clicking on each of the designations above, place
 ```r
 # specify a folder as the working directory
 setwd('C:/...')
+
+library(terra)
 
 # load regions
 montesinho <- terra::vect('./pnm.gpkg')
