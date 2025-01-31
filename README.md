@@ -16,8 +16,8 @@ You can (re)install ecotrends from GitHub and then load it:
 ### Regions for modelling
 
 In MontObEO, the maxent classifier was trained in the region of Montesinho Natural Park (MNP) but the results were projected to the Montesinho/Nogueira Protection Area. Thus, two vector files were used:
-- <a href="https://drive.google.com/uc?export=download&id=1uuUxtpfjJlTDW4gPKLpz101U6L1yh8cz">pnm.gpkg</a> - with MNP limits
-- <a href="https://drive.google.com/uc?export=download&id=1HhLo7iJdTVH259e66YIArJokbyGWQgzP">pnm_n_grid_limit.gpkg</a> - with Montesinho/Nogueira limits (1km cell grid used on the project)
+- <a href="https://drive.google.com/uc?export=download&id=1uuUxtpfjJlTDW4gPKLpz101U6L1yh8cz">pnm.gpkg</a> - with MNP limits (160 KB)
+- <a href="https://drive.google.com/uc?export=download&id=1HhLo7iJdTVH259e66YIArJokbyGWQgzP">pnm_n_grid_limit.gpkg</a> - with Montesinho/Nogueira limits (1km cell grid used on the project) (100 KB)
 
 You can download both files by clicking on each of the designations above, place them in your working directory and load them:
 
@@ -38,7 +38,7 @@ plot(monteNog)
 
 ### Species presence coordinates
 
-You will need some species presence coordinates, then you can download the vector file with the <a href="https://drive.google.com/uc?export=download&id=1ohSr_InDlzXThOP3GuJrV5B14aYqv73I">species occurrences</a> modeled in MontObEO.
+You will need some species presence coordinates, then you can download the vector file with the <a href="https://drive.google.com/uc?export=download&id=1ohSr_InDlzXThOP3GuJrV5B14aYqv73I">species occurrences</a> modeled in MontObEO (3 MB).
 
 After loading the file you can filter the species you want to model:
 
@@ -67,7 +67,7 @@ In montobeo, the annual averages of six MODIS variables were used (annual mean a
 - AAB	- Area Annually Burned
 - TSF	- Time Since Fire
 
-Since the periodicity is annual, a raster image is required for each year with six bands corresponding to the variables. You can download a zip file with the 23 images of <a href="https://drive.google.com/uc?export=download&id=1PcnfVH89t09LbvTYY2exqGor9JQbZSu4">predictor variables</a> used in Montobeo corresponding to the years 2001 to 2023.
+Since the periodicity is annual, a raster image is required for each year with six bands corresponding to the variables. You can download a zip file with the 23 images of <a href="https://drive.google.com/uc?export=download&id=1PcnfVH89t09LbvTYY2exqGor9JQbZSu4">predictor variables</a> used in Montobeo corresponding to the years 2001 to 2023 (1.5 MB).
 
 After loading the files, it is necessary to do some processing to adjust the band names to those required by the package (see R help for the getModels function):
 
