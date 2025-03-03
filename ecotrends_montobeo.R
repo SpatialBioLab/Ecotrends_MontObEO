@@ -38,7 +38,6 @@ raster_dir <- "./pred_vars"
 tif_files <- list.files(raster_dir, pattern = "\\.tif$", full.names = TRUE)
 r <- terra::rast(tif_files[[1]])
 
-
 # create empty rasters list
 raster_list <- list()
 
